@@ -3,150 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Footer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #333;
+    <title>Company Footer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            padding: 0;
-        }
-	h1 {
+body {
+    font-family: Arial, sans-serif;
+}
+h1 {
     color: white;
     padding: 20px;
     text-align: left;
 }
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
 
-        /* Footer Styles */
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 40px 0;
-        }
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
 
-        .footer-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            max-width: 1200px;
-            margin: auto;
-        }
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
 
-        .footer-section {
-            flex: 1;
-            padding: 20px;
-            min-width: 100px;
-        }
+.footer-section h2, .footer-section h3 {
+    margin-bottom: 15px;
+}
 
-        .footer-section h3 {
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
+.footer-section ul {
+    list-style: none;
+}
 
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-        }
+.footer-section ul li {
+    margin-bottom: 10px;
+}
 
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-        .footer-section ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
+.footer-section ul li a:hover {
+    color: #999;
+}
 
-        .footer-section ul li a:hover {
-            text-decoration: underline;
-        }
+.social-icons {
+    margin-top: 15px;
+	    margin-left: 1100px;
 
-        .media-icons {
-            display: flex;
-            justify-content: space-between;
-            width: 120px;
-            margin-top: 20px;
-        }
+}
 
-        .media-icons a {
-            color: #fff;
-            font-size: 24px;
-        }
+.social-icons a {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
 
-        /* Flexbox adjustments for responsiveness */
-        @media (max-width: 768px) {
-            .footer-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .footer-section {
-                text-align: center;
-            }
-        }
-    </style>
+.social-icons a:hover {
+    color: #999;
+}
+
+.footer-bottom {
+    background-color: #333;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    color: #bbb;
+}
+
+.footer-bottom p a {
+    color: #bbb;
+    text-decoration: none;
+       margin-left: 1000px;
+
+}
+
+.footer-bottom p a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+</style>
 </head>
 <body>
-<h1>company</h1> 
-<footer>
-    <div class="footer-container">
-       <div class="footer-section">
-            <h3>Links</h3>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-               <li><a href="#contact">contact</a></li>
-               <li><a href="#about us">about us</a></li>
-               <li><a href="#Get started">Get started</a></li>
-            </ul>
-        </div>
 
-        <!-- About Section -->
-        <div class="footer-section">
-            <h3>Services</h3>
-            <ul>
-                <li><a href="#app design">App design</a></li>
-                <li><a href="#web design">Web design</a></li>
-                <li><a href="#logo design">Logo design</a></li>
-                                <li><a href="#banner design">Banner design</a></li>
+    <footer>
+     <h2>company</h2>
+		 <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook media-icon"></i></a>
+                    <a href="#"><i class="fab fa-twitter media-icon"></i></a>
+                    <a href="#"><i class="fab fa-instagram media-icon"></i></a>
+                    <a href="#"><i class="fab fa-linkedin media-icon"></i></a>
+                    <a href="#"><i class="fab fa-youtube media-icon"></i></a>
+                </div>
 
-            </ul>
-        </div>
+        <div class="footer-container">
 
-       
-
-        <!-- Services Section -->
-        <div class="footer-section">
-            <h3>other services</h3>
-            <ul>
-                <li><a href="#SEO">SEO</a></li>
-                <li><a href="#content Marketting">content Marketting</a></li>
-                <li><a href="#Prints"></a>Prints</li>
-				<li><a href="#Social Media"></a>Social Media</li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
-            <h3>Contact</h3>
-            <ul><li> 8879887262</li>
-	     <li> 8879887262</li>
-            <li>contact@company.com</li>
-</ul>
-			<br>
-    <p class comstyle="display: inline;">© 2021 company.</p>
-<p style="display: inline; margin-left: 20px;">privacy policy</p>        <!-- Social Media Icons -->
-            <div class="media-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+            <div class="footer-section">
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Get Started</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">App Design</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Logo Design</a></li>
+                    <li><a href="#">Banner Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Other Services</h3>
+                <ul>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Content Marketing</a></li>
+                    <li><a href="#">Prints</a></li>
+                    <li><a href="#">Social Media</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>+91 8879887262</li>
+                    <li><a href="mailto:contact@company.com">contact@company.com</a></li>
+                </ul>
+               
             </div>
         </div>
-    </div>
-</footer>
-
-<!-- Font Awesome Icons CDN (for social media icons) -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+        <div class="footer-bottom">
+            <p>Copyright © 2021 company. <a href="#">Privacy policy</a></p>
+        </div>
+    </footer>
 </body>
 </html>
