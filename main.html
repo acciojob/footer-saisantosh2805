@@ -1,60 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
- 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer</title>
+	 <link rel="stylesheet" href="style.css" />
+    <link  rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); 	
       * {
         color: white;
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
       }
- 
-      body {
-        background-color: black;
-      }
- 
-      .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 10px 30px;
-      }
- 
-      .logo-details {
-        font-weight: bold;
-        font-size: xx-large;
-      }
-      .top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
- 
-      .media-icons {
-        display: flex;
-      }
- 
-      a {
-        text-decoration: none;
-        color: white;
-      }
- 
-      img {
-        width: auto;
-        height: auto;
-      }
- 
-      .link-boxes {
+	body{
+		background-color:black;
+			}
+	.container{
+		display:flex;
+		flex-direction:coloumn;
+		justify-content:space-around;
+		padding:10px 30px;
+	}
+	.logo-details{
+		font-weight:bold;
+		font-size:xx-large;
+	}
+	.top{
+		display:flex;
+justify-content:space-between;
+	align-items:center;
+	}
+	
+	.media-icons{
+		display:flex;
+	}
+	a{
+		text-decoration:none;
+	color:white;
+	}
+	img{
+		width:auto;
+		height:auto;
+	}
+	.link-boxes {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -64,27 +53,22 @@
         list-style-type: none;
         padding: 0;
       }
- 
-      .bottom-details {
+	.bottom-details {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: rgb(94, 94, 94);
         padding: 10px 30px;
-      }
-    </style>
-  </head>
- 
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-            <a href="#" class="media-icons">
+      }</style></head>
+	<body>
+		<footer>
+		<div class="container">
+			<div class="top">
+	<div class="logo-details">
+		<span class="logo_name">company</span>
+					</div>
+				<div class="media-icons">
+	<a href="#" class="media-icons">
               <img
                 src="https://img.icons8.com/?size=50&id=118497&format=png"
                 alt="facebook icon"
@@ -126,7 +110,8 @@
             </a>
           </div>
         </div>
-        <div class="link-boxes">
+	
+		<div class="link-boxes">
           <!-- your code here -->
           <div>
             <h3><u>Links</u></h3>
@@ -167,11 +152,10 @@
           </div>
         </div>
       </div>
-      <div class="bottom-details">
-        <!-- your code here -->
-        <p>Copyright &copy; 2021 company.</p>
+			<div class="bottom-details">
+				<p>Copyright &copy; 2021 company.</p>
         <p>Privacy policy</p>
-      </div>
-    </footer>
-  </body>
+			</div>
+		</footer>
+	</body>
 </html>
